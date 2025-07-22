@@ -57,7 +57,7 @@ app.session_interface = SecureCookieSessionInterface()
 # Initialize CORS
 CORS(app, supports_credentials=True, resources={
     r"/*": {
-        "origins": ["https://livecode.awscertif.site", "http://localhost:5000"],
+        "origins": ["https://livecode.awscertif.site", "http://localhost:5000","https://utrains.selftesthub.com"],
         "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
         "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
         "expose_headers": ["Content-Type", "Authorization", "Set-Cookie"],

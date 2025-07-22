@@ -7,7 +7,8 @@ echo "Starting deployment to production....."
 
 # Variables defined
 # DOMAIN="livecode.awscertif.site"
-DOMAIN_IP="65.1.134.209"
+DOMAIN="utrains.selftesthub.com"
+# DOMAIN_IP="65.1.134.209"
 APP_DIR="/home/ubuntu/livecode"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_DIR="$( cd "$SCRIPT_DIR/.." && pwd )"
