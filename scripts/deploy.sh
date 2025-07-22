@@ -5,7 +5,7 @@ set -e
 
 echo "Starting deployment to production....."
 
-# Variables
+# Variables defined
 # DOMAIN="livecode.awscertif.site"
 DOMAIN_IP="65.1.134.209"
 APP_DIR="/home/ubuntu/livecode"
