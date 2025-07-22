@@ -48,7 +48,7 @@ app.config.update(
     SESSION_COOKIE_SAMESITE='Lax',
     SESSION_COOKIE_NAME='livecode_session',
     PERMANENT_SESSION_LIFETIME=timedelta(hours=24),
-    SESSION_COOKIE_DOMAIN='.livecode.awscertif.site' if os.environ.get('FLASK_ENV') == 'production' else None
+    SESSION_COOKIE_DOMAIN='.utrains.selftesthub.com' if os.environ.get('FLASK_ENV') == 'production' else None
 )
 
 # Configure session interface
@@ -921,7 +921,7 @@ def test_cookie():
         httponly=True,
         secure=True,
         samesite='Lax',
-        domain='.livecode.awscertif.site',
+        domain='.utrains.selftesthub.com',
         max_age=3600
     )
     return response
