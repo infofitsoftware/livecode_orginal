@@ -24,17 +24,26 @@ jobs:
         script: |
           # Set non-interactive frontend for package installation
           export DEBIAN_FRONTEND=noninteractive
+          echo "Set DEBIAN_FRONTEND to noninteractive"
           
           # Clean up previous deployment
           rm -rf /home/ubuntu/classroom-notes
+          echo "Removed previous deployment directory"
+          
           mkdir -p /home/ubuntu/classroom-notes
+          echo "Created deployment directory"
+          
           cd /home/ubuntu/classroom-notes
+          echo "Changed to deployment directory"
           
           # Clone the repository
           git clone https://github.com/infofitsoftware/livecode_orginal.git .
+          echo "Cloned repository"
           
           # Make the deployment script executable
           chmod +x scripts/deploy.sh
+          echo "Made deploy.sh executable"
           
           # Run the deployment script
-          ./scripts/deploy.sh 
+          ./scripts/deploy.sh
+          echo "Ran deploy.sh" 
